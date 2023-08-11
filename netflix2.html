@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Netflix Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="1.FULL STACK DEVELOPER\a.FRONT END DEVELOPER\Styles\Icons\Font awesome\Icons.css">	
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;  
+ }
+ 
+body{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between; 
+    background-color: rgba(0, 0, 0, .995); 
+ }
+
+header .logo{
+    width: 150px;                          
+    height: 60px;
+    color: red;
+    font-size: 2.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navigater{
+  display: flex;
+  justify-content: space-evenly;
+  width:200px;
+}
+
+#lang{
+  border: none;
+  background-color: rgb(38, 31, 31);
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.signin{
+  background: rgb(215, 5, 5);
+  padding: 5px 8px;
+  border-radius: 5px;
+  list-style: none;
+}
+.signin a{
+  text-decoration: none;
+  color:white;
+  font-size: 12px;
+}
+
+.hero{
+  background-image: url("https://tinyurl.com/2ytolqx5");
+  background-repeat: repeat;
+  background-size: cover;
+  height:80vh;
+  width: 100vw;
+  color: beige;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid rgb(14, 11, 11);
+}
+.context{
+  display: flex;
+  max-height: 250px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.context h1{
+  font-size: 3rem;
+  padding: 10px;
+}
+.context p{
+  padding: 5px;
+  font-size: 1.2rem;
+}
+form{
+  width:65%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 60px;
+  padding: 10px;
+}
+form input{
+  outline: none;
+  min-width:400px ;
+  width:50%;
+  background: rgba(10, 10, 10, 0.7);
+  border:none;
+  color:rgba(240, 255, 255, 0.326);
+  font-size: 1.2rem;
+  padding-left:15px;
+}
+
+form button{
+  min-width: 100px;
+  color:white;
+  border:none;
+  background:  rgb(215, 5, 5);
+  font-size: 1rem;
+  
+}
+.hero button{
+  padding:10px;
+  font-size: 1rem;
+}
+
+</style>
+    
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span>NETFLIX</span>
+      </div>
+      <nav class="navigater">
+        <select name="Language" id="lang"><i class="fa-solid fa-globe"></i>
+          <option value="english" class="lang">English</option>
+          <option value="hindi" class="lang">Hindi</option>
+          <option value="telugu" class="lang">Telugu</option>
+          <option value="tamil">Tamil</option>
+        </select>
+        <ul>
+          <li class="signin"><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">       
+        <div class="context">
+          <h1>Unlimited movies, TV shows, and more.</h1>
+          <p>Watch anywhere. Cancel anytime.</p>
+          <form action="search">
+            <input type="search" placeholder="Search here.">
+            <button>Get Start</button>
+          </form>
+          <button>Watch Now</button>
+        </div>
+      </section>
+      <section class="features">
+        <h2>Enjoy on your TV.</h2>
+        <p>Watch on smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        <h2>Watch everywhere.</h2>
+        <p>Stream unlimited movies and TV shows on your device. Watch instantly on the web at Netflix.com from your personal computer or on any internet-connected device that offers the Netflix app.</p>
+        <h2>Cancel anytime.</h2>
+        <p>No commitments. Cancel online at Netflix.com at any time.</p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <p>© Netflix 2021</p>
+      </div>
+    </footer>
+  </body>
+</html>
